@@ -9,7 +9,6 @@ From the command line:
 1. Clone this repo
 1. Run `gem install faraday`
 1. Run `gem install pry`
-1. Run `gem install pry`
 1. Run `gem install rspec`
 
 ## Testing
