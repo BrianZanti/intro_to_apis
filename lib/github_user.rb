@@ -17,8 +17,7 @@ class GithubUser
 
 private
   def format_date(date)
-    date = DateTime.parse(date)
-    .strftime("%B %-d, %Y")
+    DateTime.parse(date).strftime("%B %-d, %Y")
   end
 
   def greeting
