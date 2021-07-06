@@ -38,6 +38,7 @@ RSpec.describe GithubService do
       "updated_at": "2021-06-07T21:28:42Z"
     }'
 
+    allow_any_instance_of(Faraday::Connection).to receive(:get).and_return(Faraday::Response.new)
     allow_any_instance_of(Faraday::Response).to receive(:body).and_return(mock_response)
 
     json = GithubService.user_info('brianzanti')
